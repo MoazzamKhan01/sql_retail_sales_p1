@@ -83,7 +83,7 @@ SELECT
   *
 FROM retail_sales
 WHERE 
-    category = 'Clothing'
+    category ILIKE 'Clothing'
     AND 
     TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
     AND
